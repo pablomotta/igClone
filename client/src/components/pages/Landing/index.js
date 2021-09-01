@@ -1,12 +1,18 @@
 import React from 'react';
+
 import './style.scss';
+import phones from './phones.png';
+
+import AuthCard from '../../AuthCard';
 
 const Landing = () => {
 	return (
-		<div>
-			<h1>Landing Page</h1>
-			<p>test</p>
-		</div>
+		<article className='container-landing'>
+			<div className='container-image'>
+				<img className='phones' src={phones} alt='phones' />
+			</div>
+			<AuthCard />
+		</article>
 	);
 };
 
