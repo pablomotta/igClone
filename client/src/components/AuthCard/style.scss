@@ -1,0 +1,47 @@
+@import '../../App.scss';
+
+// index.js
+
+.form--app-links-container {
+	width: 100%;
+	min-width: 350px;
+	p {
+		margin: 10px 20px;
+	}
+	.form--app-links {
+		display: flex;
+		padding: 10px;
+		width: 100% !important;
+		justify-content: center;
+		a {
+			height: 40px;
+			img {
+				height: 40px;
+			}
+			&:first-child {
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+// FormFooter.js
+
+.form-footer {
+	width: 100%;
+	min-width: 350px;
+	border: solid $gray-light 1px;
+	background-color: $white;
+	.form-footer-text {
+		padding: 10px 0;
+		p {
+			font-size: 14px;
+			font-family: 'Segoe';
+			span {
+				font-weight: bold;
+				color: $blue;
+				cursor: pointer;
+			}
+		}
+	}
+}
