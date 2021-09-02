@@ -1,3 +1,4 @@
+@import './colors';
 .btn {
 	display: inline-block;
 	background: $gray-light;
@@ -49,7 +50,7 @@
 .bg-dark,
 .badge-dark,
 .alert-dark {
-	background: var(--dark-color);
+	background: $black;
 	color: #fff;
 }
 
@@ -57,17 +58,20 @@
 .bg-danger,
 .badge-danger,
 .alert-danger {
-	background: var(--danger-color);
+	background: $danger;
 	color: #fff;
 }
 
 .btn-success {
-	background: var(--success-color);
+	background: $success;
 	color: #fff;
+	&:hover {
+		color: $white;
+	}
 }
 
 .btn-white {
-	background: #fff;
+	background: $white;
 	color: #333;
 	border: #ccc solid 1px;
 }
