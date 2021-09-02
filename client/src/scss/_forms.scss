@@ -1,0 +1,74 @@
+/* Forms */
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px $white-shade inset !important;
+	-webkit-text-fill-color: $gray;
+}
+input,
+select,
+textarea {
+	color: $gray;
+}
+input {
+	margin: 0.2rem 0;
+	&:focus {
+		outline: none !important;
+	}
+}
+
+.form-text {
+	display: block;
+	margin-top: 0.3rem;
+	color: $gray;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid $gray-light;
+}
+
+input[type='submit'],
+button {
+	font: inherit;
+}
+
+.form-group {
+	margin: 0.45rem 0;
+}
+
+.form-group input {
+	// margin: 0.2rem 0;
+	padding: 11px 0 11px 8px;
+	font-size: 12px;
+	background-color: $white-shade;
+	border-radius: 3px;
+
+	&:active,
+	&:focus {
+		border-color: lighten($color: $gray, $amount: 10);
+	}
+}
+
+.form-container {
+	max-width: 500px;
+	margin: 2rem auto;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
+.form-container h1,
+h2,
+h3 {
+	text-align: center;
+}
