@@ -34,7 +34,6 @@ img {
 /* Utilities */
 .container {
 	max-width: calc(448px + 350px);
-	// max-width: 750px;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 0.635rem;
@@ -200,13 +199,6 @@ img {
 	grid-gap: 2rem;
 }
 
-.alert {
-	padding: 0.7rem;
-	margin: 1rem 0;
-	opacity: 0.9;
-	background: $gray-light;
-	color: #333;
-}
 .badge {
 	font-size: 0.8rem;
 	padding: 0.2rem 0.7rem;
@@ -218,15 +210,13 @@ img {
 }
 
 .bg-success,
-.badge-success,
-.alert-success {
+.badge-success {
 	background: var(--success-color);
 	color: #fff;
 }
 
 .bg-white,
-.badge-white,
-.alert-white {
+.badge-white {
 	background: #fff;
 	color: #333;
 	border: #ccc solid 1px;
