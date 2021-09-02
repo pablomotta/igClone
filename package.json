@@ -1,8 +1,8 @@
 {
-	"name": "igClone",
+	"name": "ig-clone",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "Instagram Clone",
+	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
 		"server": "nodemon server.js",
