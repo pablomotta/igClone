@@ -123,27 +123,33 @@ const RegisterForm = () => {
 					value='Sign Up'
 					className='btn btn-login btn-block'
 				/>
-
-				<a
-					href='https://www.facebook.com/'
-					className='facebook-auth text-center'
-					target='_blank'
-					rel='noreferrer'
-				>
-					<span className='facebook-logo'></span>
-					<span className='facebook-auth-text'>
-						Log in with facebook
-					</span>
-				</a>
-				<div className='text-center forgot-password'>
+				<p className='register-policy text-center'>
+					By signing up, you agree to our{' '}
 					<a
-						href='https://www.facebook.com/'
 						target='_blank'
+						href='https://help.instagram.com/581066165581870'
 						rel='noreferrer'
 					>
-						Forgot password?
-					</a>
-				</div>
+						Terms
+					</a>{' '}
+					,{' '}
+					<a
+						target='_blank'
+						href='https://help.instagram.com/519522125107875'
+						rel='noreferrer'
+					>
+						Data Policy
+					</a>{' '}
+					and{' '}
+					<a
+						target='_blank'
+						href='https://help.instagram.com/519522125107875'
+						rel='noreferrer'
+					>
+						Cookies Policy
+					</a>{' '}
+					.
+				</p>
 			</form>
 		</div>
 	);
