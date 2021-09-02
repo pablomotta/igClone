@@ -57,6 +57,14 @@ const Home = () => {
 					>
 						Click here to log out
 					</div>
+					<a
+						href='https://github.com/pablomotta/pm-ig-clone'
+						target='_blank'
+						rel='noreferrer'
+						className='btn btn-success btn-lg'
+					>
+						Click here to visit the source code
+					</a>
 				</div>
 			)}
 		</article>
