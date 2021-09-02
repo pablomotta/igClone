@@ -1,5 +1,46 @@
 @import '../../App.scss';
 
 footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-height: 151px;
+	color: $gray;
+	font-size: 12px;
+	.footer-links {
+		max-width: 95vw;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0 1rem;
+		a {
+			margin: 0 8px 0px;
+		}
+	}
+	.row-copyright {
+		padding: 0;
+		margin: 12px 0;
+		span {
+			margin-left: 16px;
+		}
+		a {
+			span {
+				margin-left: 2px;
+				margin-top: -25px !important;
+				.arrow {
+					border: solid $gray;
+					border-width: 0 1px 1px 0;
+					display: inline-block;
+					padding: 3px;
+					margin-bottom: 2px;
+				}
+				.down {
+					transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+				}
+			}
+		}
+	}
 }
