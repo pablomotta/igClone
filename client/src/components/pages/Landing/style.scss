@@ -3,7 +3,7 @@
 .container-landing {
 	height: 100%;
 	min-height: calc(100vh - 183px);
-	margin-top: 32px;
+	margin-top: 40px;
 	display: flex;
 	align-items: center;
 	.container-image {
@@ -15,4 +15,14 @@
 
 .phones {
 	width: 456px;
+}
+
+// Media queries
+@media only screen and (max-width: 875px) {
+	.container-landing {
+		justify-content: center;
+		.container-image {
+			display: none;
+		}
+	}
 }
