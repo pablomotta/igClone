@@ -1,1 +1,19 @@
 @import '../../../App.scss';
+.container-home {
+	min-height: calc(100vh - 183px);
+	display: flex;
+	// align-items: center;
+	justify-content: center;
+	.user-card {
+		margin-top: 3rem;
+		max-width: 400px;
+		max-height: 300px;
+		background-color: $white;
+		border: solid 1px $gray-light;
+		border-radius: 5px;
+		padding: 2rem;
+		.btn {
+			margin-top: 50px;
+		}
+	}
+}
