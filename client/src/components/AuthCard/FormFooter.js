@@ -9,7 +9,7 @@ const FormFooter = (props) => {
 				{authType !== 'login' ? (
 					<p>
 						Have an account?{' '}
-						<span onClick={() => setAuthType('login')}>Login</span>
+						<span onClick={() => setAuthType('login')}>Log in</span>
 					</p>
 				) : (
 					<p>
