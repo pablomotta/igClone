@@ -7,11 +7,79 @@
 	display: flex;
 	align-items: center;
 	.container-image {
+		position: relative;
 		min-width: 456px;
 		margin-right: -18px;
 		margin-left: -22px;
+		// .image-backgrounds {
+		// 	position: absolute;
+		// 	border: $black solid 2px;
+		// 	width: 252px;
+		// 	height: 442px;
+		// 	top: 92px;
+		// 	right: 58px;
+		// }
 	}
 }
+#slider {
+	border: $black solid 2px;
+	width: 252px;
+	height: 445px;
+	top: 92px;
+	right: 58px;
+	position: absolute;
+	img {
+		top: 92px;
+		right: 58px;
+		background: $black;
+		// width: 252px;
+		// height: 441px;
+		&:nth-of-type(1) {
+			animation-name: fader;
+			animation-delay: 6s;
+			animation-duration: 1s;
+			z-index: 20;
+		}
+		&:nth-of-type(2) {
+			display: none;
+			z-index: 10;
+		}
+		&:nth-of-type(n + 3) {
+			display: none;
+		}
+	}
+}
+@keyframes fader {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes fade-out {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+// .bg-1 {
+// 	background-image: url('./img/ig-1.jpeg');
+// }
+// .bg-2 {
+// 	background-image: url('./img/ig-1.jpeg');
+// }
+// .bg-3 {
+// 	background-image: url('./img/ig-1.jpeg');
+// }
+// .bg-4 {
+// 	background-image: url('./img/ig-1.jpeg');
+// }
+// .bg-5 {
+// 	background-image: url('./img/ig-1.jpeg');
+// }
 
 .phones {
 	width: 456px;
