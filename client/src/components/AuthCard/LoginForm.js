@@ -56,7 +56,7 @@ const LoginForm = () => {
 			<form onSubmit={onSubmit}>
 				<div className='form-group'>
 					<input
-						placeholder='Username, or email'
+						placeholder='Email'
 						type='email'
 						name='email'
 						value={email}
