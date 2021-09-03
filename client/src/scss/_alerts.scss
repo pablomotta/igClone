@@ -4,16 +4,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	padding: 15px 20px;
+	padding: 12px 12px;
 	margin-bottom: 10px;
-	border: 1px solid;
 	border-radius: 50px;
 	position: fixed;
-	top: 10px;
-	right: 10%;
+	top: 0px;
+	right: 20vw;
 	z-index: 999999 !important;
-	min-width: 30rem;
-	max-width: 25vw;
+	min-width: 60vw;
 }
 
 .alert h4 {
@@ -103,17 +101,18 @@
 	color: darken($color: $white, $amount: 10) !important;
 }
 
-// Tablets
-@media only screen and (max-width: 768px) {
-	.alert {
-		top: 65px;
-	}
-}
+// // Tablets
+// @media only screen and (max-width: 768px) {
+// 	.alert {
+// 		top: 65px;
+// 	}
+// }
 // Mobile
 @media only screen and (max-width: 500px) {
 	.alert {
-		min-width: 100%;
-		top: 65px;
-		right: 0;
+		min-width: 80vw;
+		top: 0px;
+		right: 10vw;
+		padding: 10px 10px;
 	}
 }
